@@ -1,5 +1,6 @@
 #import library
 from tkinter import *
+from typing import ForwardRef
 
 #create main page
 def start_main_page():
@@ -32,7 +33,7 @@ def start_main_page():
         lab_img1 = Button(
             main_window,
             image=img1,
-            bg='white',
+            bg='turquoise2',
             border=0,
             justify='center',
 
@@ -120,15 +121,16 @@ def start_main_page():
 
     main_window = Tk()
 
-    main_window.geometry("500x500+500+150")
+    main_window.geometry("500+600")
     main_window.resizable(0, 0)
     main_window.title("Jumbled Words Quiz")
-    main_window.configure(background="#e6fff5")
+    main_window.configure(background="turquoise2")
     
     #Define images
     img0 = PhotoImage(file="C:/Users/fali0/OneDrive/Desktop/JUMBLE WORDS GAME/logo/logo2.png")
     img1 = PhotoImage(file="C:/Users/fali0/OneDrive/Desktop/JUMBLE WORDS GAME/logo/back.png")
-    
+
+
     #create a label
     lab_img = Label(
         main_window,
@@ -136,7 +138,6 @@ def start_main_page():
         bg='#e6fff5',
     )
     lab_img.pack(pady=(50, 0))
-   
 
     #create start button
     start_btn = Button(
@@ -145,7 +146,7 @@ def start_main_page():
         width=18,
         borderwidth=8,
         fg="#000000",
-        bg="red2",
+        bg="dark green",
         font=("", 15),
         cursor="hand2",
         command=show_option,

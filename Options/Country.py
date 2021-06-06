@@ -60,9 +60,9 @@ def main():
             ans_lab.configure(text='Not enough points')
 
     my_window = Tk()
-    my_window.geometry("500x500+500+150")
+    my_window.geometry("500x500+500+100")
     my_window.resizable(0, 0)
-    my_window.title("Jumbled Words Quiz")
+    my_window.title("Jumbled Words Quiz-Countries")
     my_window.configure(background="turquoise2")
     img1 = PhotoImage(file="C:/Users/fali0/OneDrive/Desktop/JUMBLE WORDS GAME/logo/back.png")
 
