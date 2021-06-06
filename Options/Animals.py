@@ -132,7 +132,7 @@ def main():
 
     #create a "Show Answer" button to see the answer
     ans = Button(
-        text="Show_Answer",
+        text="Show Answer",
         width=18,
         borderwidth=8,
         fg="#000000",
