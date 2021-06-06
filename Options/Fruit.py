@@ -18,13 +18,14 @@ jumbled_rand_word = FRUITS_WORD[ran_num]
 
 points = 0
 
-
+#define the main function
 def main():
+  #define the back function
     def back():
         my_window.destroy()
         import main_start
         main_start.start_main_page()
-
+ #define the change funtion
     def change():
         global ran_num
         ran_num = randrange(0, (len(FRUITS_WORD)))
@@ -66,7 +67,7 @@ def main():
     my_window.configure(background="turquoise2")
     img1 = PhotoImage(file="C:/Users/fali0/OneDrive/Desktop/JUMBLE WORDS GAME/logo/back.png")
 
-    #create label
+    #create label for image 
     lab_img1 = Button(
         my_window,
         image=img1,
@@ -75,8 +76,9 @@ def main():
         justify='center',
         command=back,
     )
+    #pack the label of image
     lab_img1.pack(anchor='nw', pady=10, padx=10)
-
+    #create a label for score
     score = Label(
         text="Score:- 0",
         pady=10,
@@ -84,8 +86,9 @@ def main():
         fg="#000000",
         font="Titillium  14 bold"
     )
+    #pack the label of score
     score.pack(anchor="n")
-
+  #create a label for word
     word = Label(
         text=jumbled_rand_word,
         pady=10,
@@ -93,6 +96,7 @@ def main():
         fg="#000000",
         font="Titillium  30 bold"
     )
+    #pack the label of word
     word.pack()
 
     #create an Entry Box for answer
@@ -143,13 +147,14 @@ def main():
      #Pack the answer Button
     ans.pack(pady=(20, 10))
 
-    #create a label
+    #create a label for answer
     ans_lab = Label(
         text="",
         bg="turquoise2",
         fg="#000000",
         font="Courier 15 bold",
     )
+    #pack the label of answer
     ans_lab.pack()
 
     my_window.mainloop()
