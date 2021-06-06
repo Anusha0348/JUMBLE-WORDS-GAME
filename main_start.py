@@ -21,8 +21,8 @@ def start_main_page():
             from Options import Shapes
             Shapes.main()
         elif args == 6:
-            from Options import Vegetable
-            Vegetable.main()
+            from Options import Country
+            Country.main()
 
 
     #create option buttons
@@ -93,7 +93,7 @@ def start_main_page():
         )
 
         sel_btn6 = Button(
-            text="Vegetable",
+            text="Countries",
             width=20,
             borderwidth=8,
             font=("", 18),
