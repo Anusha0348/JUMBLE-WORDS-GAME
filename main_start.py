@@ -28,76 +28,77 @@ def start_main_page():
     #create option buttons
     def option():
 
+        #Go Back Button
         lab_img1 = Button(
             main_window,
             image=img1,
-            bg='#e6fff5',
+            bg='white',
             border=0,
             justify='center',
 
         )
         sel_btn1 = Button(
             text="Animals",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(1),
         )
 
         sel_btn2 = Button(
             text="Body parts",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(2),
         )
 
         sel_btn3 = Button(
             text="Colour",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(3),
         )
 
         sel_btn4 = Button(
             text="Fruits",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(4),
         )
 
         sel_btn5 = Button(
             text="Shapes",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(5),
         )
 
         sel_btn6 = Button(
             text="Vegetable",
-            width=18,
+            width=20,
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="green",
+            bg="purple3",
             cursor="hand2",
             command=lambda: start_game(6),
         )
@@ -136,6 +137,7 @@ def start_main_page():
     )
     lab_img.pack(pady=(50, 0))
    
+
     #create start button
     start_btn = Button(
         main_window,
@@ -143,14 +145,14 @@ def start_main_page():
         width=18,
         borderwidth=8,
         fg="#000000",
-        bg="green",
-        font=("", 13),
+        bg="red2",
+        font=("", 15),
         cursor="hand2",
         command=show_option,
     )
 
     #pack the start button
-    start_btn.pack(pady=(50, 20))
+    start_btn.pack(pady=(50, 30))
 
     main_window.mainloop()
 
