@@ -17,13 +17,14 @@ jumbled_rand_word = ANIMALS_WORD[ran_num]
 
 points = 0
 
-
+#define the main fuction
 def main():
-    def back():
+    def back():  #define the back function 
         my_window.destroy()
         import main_start
         main_start.start_main_page()
 
+    #define the change function
     def change():
         global ran_num
         ran_num = randrange(0, (len(ANIMALS_WORD)))
@@ -150,6 +151,7 @@ def main():
         fg="#000000",
         font="Courier 15 bold",
     )
+    #pack the label
     ans_lab.pack()
 
     my_window.mainloop()
